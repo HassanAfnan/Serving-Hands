@@ -1,0 +1,41 @@
+/*font Variables*/
+$text-font: 'Roboto', sans-serif;
+$title-font: 'Poppins', sans-serif;
+
+/*Color Variables*/
+$primary-color: #60bc0f;
+$primary-color2: #fdbb00;
+$title-color: #222222;
+$text-color: #777777;
+
+/*=================== fonts ====================*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:500,600|Roboto');
+
+// Mixins
+@mixin transition($property: all, $duration: 300ms, $animate: linear, $delay:0s) {
+	transition: $property $duration $animate $delay;
+}
+@mixin transform($value) {
+	transform: $value;
+	-webkit-transform: $value;
+	-moz-transform: $value;
+	-o-transform: $value;
+	-ms-transform: $value;
+}
+
+// Placeholder Mixins
+
+@mixin placeholder {
+	&.placeholder {
+		@content;
+	}
+	&:-moz-placeholder {
+		@content;
+	}
+	&::-moz-placeholder {
+		@content;
+	}
+	&::-webkit-input-placeholder {
+		@content;
+	}
+}

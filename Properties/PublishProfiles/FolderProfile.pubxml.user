@@ -1,0 +1,946 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\pot</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include=".DS_Store">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="about-us.aspx">
+      <publishTime>01/15/2020 21:06:42</publishTime>
+    </File>
+    <File Include="AdminPage.aspx">
+      <publishTime>01/15/2020 20:37:56</publishTime>
+    </File>
+    <File Include="AdminSignUp.aspx">
+      <publishTime>01/15/2020 16:05:46</publishTime>
+    </File>
+    <File Include="bin/itextsharp.dll">
+      <publishTime>01/06/2020 20:28:05</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>05/25/2018 01:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>05/25/2018 01:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>05/25/2018 01:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>05/25/2018 01:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>05/25/2018 01:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe.config">
+      <publishTime>05/25/2018 01:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>05/25/2018 01:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>05/25/2018 01:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>05/25/2018 01:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>05/25/2018 01:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>05/25/2018 01:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>05/25/2018 01:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>05/25/2018 01:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>05/25/2018 01:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>05/25/2018 01:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>05/25/2018 01:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
+      <publishTime>05/25/2018 01:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>05/25/2018 01:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>05/25/2018 01:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>05/25/2018 01:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Console.dll">
+      <publishTime>05/25/2018 01:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.FileVersionInfo.dll">
+      <publishTime>05/25/2018 01:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>05/25/2018 01:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.dll">
+      <publishTime>05/25/2018 01:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>05/25/2018 01:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>05/25/2018 01:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Pipes.AccessControl.dll">
+      <publishTime>05/25/2018 01:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Pipes.dll">
+      <publishTime>05/25/2018 01:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>05/25/2018 01:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.AccessControl.dll">
+      <publishTime>05/25/2018 01:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Claims.dll">
+      <publishTime>05/25/2018 01:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>05/25/2018 01:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Encoding.dll">
+      <publishTime>05/25/2018 01:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Primitives.dll">
+      <publishTime>05/25/2018 01:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>05/25/2018 01:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Principal.Windows.dll">
+      <publishTime>05/25/2018 01:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
+      <publishTime>05/25/2018 01:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.ValueTuple.dll">
+      <publishTime>05/25/2018 01:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.ReaderWriter.dll">
+      <publishTime>05/25/2018 01:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XmlDocument.dll">
+      <publishTime>05/25/2018 01:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.dll">
+      <publishTime>05/25/2018 01:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.XDocument.dll">
+      <publishTime>05/25/2018 01:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>05/25/2018 01:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>05/25/2018 01:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>05/25/2018 01:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>05/25/2018 01:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>05/25/2018 01:38:24</publishTime>
+    </File>
+    <File Include="bin/Serving Hands.dll">
+      <publishTime>01/15/2020 23:36:43</publishTime>
+    </File>
+    <File Include="bin/Serving Hands.pdb">
+      <publishTime>01/15/2020 23:36:43</publishTime>
+    </File>
+    <File Include="blog.aspx">
+      <publishTime>01/15/2020 22:22:21</publishTime>
+    </File>
+    <File Include="Blood.aspx">
+      <publishTime>01/15/2020 17:35:12</publishTime>
+    </File>
+    <File Include="causes.aspx">
+      <publishTime>01/15/2020 21:08:45</publishTime>
+    </File>
+    <File Include="clothes.aspx">
+      <publishTime>01/15/2020 17:36:38</publishTime>
+    </File>
+    <File Include="comment.aspx">
+      <publishTime>01/15/2020 19:22:12</publishTime>
+    </File>
+    <File Include="contact.html">
+      <publishTime>01/15/2020 21:06:44</publishTime>
+    </File>
+    <File Include="contact_process.php">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="css/.DS_Store">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="css/bootstrap.css">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="css/custom.css">
+      <publishTime>01/15/2020 14:48:41</publishTime>
+    </File>
+    <File Include="css/font-awesome.min.css">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="css/responsive.css">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="css/style.css">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="css/style.css.map">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="DonateBlood.aspx">
+      <publishTime>01/15/2020 22:21:45</publishTime>
+    </File>
+    <File Include="DonateClothes.aspx">
+      <publishTime>01/15/2020 17:38:41</publishTime>
+    </File>
+    <File Include="DonateDowery.aspx">
+      <publishTime>01/15/2020 17:40:03</publishTime>
+    </File>
+    <File Include="DonateMoney.aspx">
+      <publishTime>01/15/2020 17:40:59</publishTime>
+    </File>
+    <File Include="Donation.aspx">
+      <publishTime>01/15/2020 18:58:03</publishTime>
+    </File>
+    <File Include="Dowry.aspx">
+      <publishTime>01/15/2020 17:41:51</publishTime>
+    </File>
+    <File Include="elements.aspx">
+      <publishTime>01/15/2020 22:22:42</publishTime>
+    </File>
+    <File Include="event-details.aspx">
+      <publishTime>01/15/2020 22:22:59</publishTime>
+    </File>
+    <File Include="events.aspx">
+      <publishTime>01/15/2020 21:10:37</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.eot">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.svg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.ttf">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.woff">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.woff2">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="fonts/FontAwesome.otf">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="ForgetPassword.aspx">
+      <publishTime>01/15/2020 17:43:10</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>12/15/2019 13:51:13</publishTime>
+    </File>
+    <File Include="img/.DS_Store">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/about-img.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/b1.jfif">
+      <publishTime>01/15/2020 14:50:48</publishTime>
+    </File>
+    <File Include="img/b2.jfif">
+      <publishTime>01/15/2020 14:50:48</publishTime>
+    </File>
+    <File Include="img/banner/banner-2.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/banner/banner-map.png">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/banner/banner.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/banner/home-banner.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/blog/add.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/blog/author.png">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/blog/c1.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/blog/c2.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/blog/c3.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/blog/c4.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/blog/c5.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/blog/c6.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/blog/cat-post/cat-post-1.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/blog/cat-post/cat-post-2.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/blog/cat-post/cat-post-3.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/blog/causes/causes-1.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/blog/causes/causes-2.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/blog/causes/causes-3.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/blog/feature-img1.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/blog/main-blog/m-blog-1.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/blog/main-blog/m-blog-2.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/blog/main-blog/m-blog-3.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/blog/main-blog/m-blog-4.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/blog/main-blog/m-blog-5.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/blog/next.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/blog/popular-post/post1.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/blog/popular-post/post2.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/blog/popular-post/post3.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/blog/popular-post/post4.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/blog/post-img1.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/blog/post-img2.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/blog/prev.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/causes/.DS_Store">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/causes/c1.png">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/causes/c2.png">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/causes/c3.png">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/elements/a.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/elements/a2.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/elements/d.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/elements/disabled-check.png">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/elements/disabled-radio.png">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/elements/f1.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/elements/f2.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/elements/f3.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/elements/f4.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/elements/f5.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/elements/f6.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/elements/f7.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/elements/f8.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/elements/g1.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/elements/g2.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/elements/g3.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/elements/g4.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/elements/g5.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/elements/g6.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/elements/g7.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/elements/g8.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/elements/primary-check.png">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/elements/primary-radio.png">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/elements/success-check.png">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/elements/success-radio.png">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/elements/user1.png">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/elements/user2.png">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/elements/_DS_Store">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/event/.DS_Store">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/event/e1.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/event/e2.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/event/e3.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/event/e4.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/event/event-details.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/features/.DS_Store">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/features/fc1.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/features/fc2.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/features/fc3.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/fevicon.png">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/gallery/.DS_Store">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/gallery/g1.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/gallery/g2.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/gallery/g3.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/gallery/g4.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/gallery/g5.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/gallery/g6.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/logo.png">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/story/.DS_Store">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/story/s1.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/story/s2.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/story/s3.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/subscribe-bg.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/voluteer/.DS_Store">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/voluteer/v1.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/voluteer/v2.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/voluteer/v3.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="img/voluteer/v4.jpg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="index.aspx">
+      <publishTime>01/15/2020 21:45:20</publishTime>
+    </File>
+    <File Include="index.html">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="js/bootstrap.min.js">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="js/contact.js">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="js/countdown.js">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="js/custom.js">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="js/gmaps.min.js">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="js/jquery-3.2.1.min.js">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="js/jquery.ajaxchimp.min.js">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="js/jquery.form.js">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="js/jquery.validate.min.js">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="js/mail-script.js">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="js/popper.js">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="js/stellar.js">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="js/theme.js">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="Login.aspx">
+      <publishTime>01/15/2020 21:11:40</publishTime>
+    </File>
+    <File Include="money.aspx">
+      <publishTime>01/15/2020 17:44:05</publishTime>
+    </File>
+    <File Include="Organization.aspx">
+      <publishTime>01/15/2020 17:45:03</publishTime>
+    </File>
+    <File Include="PasswordRecovery.aspx">
+      <publishTime>01/15/2020 17:47:11</publishTime>
+    </File>
+    <File Include="scss/style.scss">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="scss/_blog.scss">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="scss/_breadcrumb.scss">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="scss/_contact.scss">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="scss/_elements.scss">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="scss/_footer.scss">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="scss/_header.scss">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="scss/_home.scss">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="scss/_predefine.scss">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="scss/_reset.scss">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="scss/_variables.scss">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/.DS_Store">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/css/font-awesome.min.css">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/css/main.css">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/css/normalize.min.css">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/css/_DS_Store">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/fonts/fontawesome-webfont.eot">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/fonts/fontawesome-webfont.svg">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/fonts/fontawesome-webfont.ttf">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/fonts/fontawesome-webfont.woff">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/fonts/FontAwesome.otf">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/fonts/_DS_Store">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/img/logo.png">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/index.html">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/js/custom.js">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/js/jquery-1.11.0.min.js">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/js/jquery.nav.js">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/js/_DS_Store">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/syntax-highlighter/scripts/shAutoloader.js">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/syntax-highlighter/scripts/shBrushAppleScript.js">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/syntax-highlighter/scripts/shBrushAS3.js">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/syntax-highlighter/scripts/shBrushBash.js">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/syntax-highlighter/scripts/shBrushColdFusion.js">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/syntax-highlighter/scripts/shBrushCpp.js">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/syntax-highlighter/scripts/shBrushCSharp.js">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/syntax-highlighter/scripts/shBrushCss.js">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/syntax-highlighter/scripts/shBrushDelphi.js">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/syntax-highlighter/scripts/shBrushDiff.js">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/syntax-highlighter/scripts/shBrushErlang.js">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/syntax-highlighter/scripts/shBrushGroovy.js">
+      <publishTime>01/11/2020 14:24:31</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/syntax-highlighter/scripts/shBrushJava.js">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/syntax-highlighter/scripts/shBrushJavaFX.js">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/syntax-highlighter/scripts/shBrushJScript.js">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/syntax-highlighter/scripts/shBrushPerl.js">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/syntax-highlighter/scripts/shBrushPhp.js">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/syntax-highlighter/scripts/shBrushPlain.js">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/syntax-highlighter/scripts/shBrushPowerShell.js">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/syntax-highlighter/scripts/shBrushPython.js">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/syntax-highlighter/scripts/shBrushRuby.js">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/syntax-highlighter/scripts/shBrushSass.js">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/syntax-highlighter/scripts/shBrushScala.js">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/syntax-highlighter/scripts/shBrushSql.js">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/syntax-highlighter/scripts/shBrushVb.js">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/syntax-highlighter/scripts/shBrushXml.js">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/syntax-highlighter/scripts/shCore.js">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/syntax-highlighter/scripts/shLegacy.js">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/syntax-highlighter/styles/shCore.css">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/syntax-highlighter/styles/shCoreDefault.css">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/syntax-highlighter/styles/shCoreDjango.css">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/syntax-highlighter/styles/shCoreEclipse.css">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/syntax-highlighter/styles/shCoreEmacs.css">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/syntax-highlighter/styles/shCoreFadeToGrey.css">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/syntax-highlighter/styles/shCoreMDUltra.css">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/syntax-highlighter/styles/shCoreMidnight.css">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/syntax-highlighter/styles/shCoreRDark.css">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/syntax-highlighter/styles/shThemeDefault.css">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/syntax-highlighter/styles/shThemeDjango.css">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/syntax-highlighter/styles/shThemeEclipse.css">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/syntax-highlighter/styles/shThemeEmacs.css">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/syntax-highlighter/styles/shThemeFadeToGrey.css">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/syntax-highlighter/styles/shThemeMDUltra.css">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/syntax-highlighter/styles/shThemeMidnight.css">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/syntax-highlighter/styles/shThemeRDark.css">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/syntax-highlighter/_DS_Store">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="Seelife Charity-doc/_DS_Store">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="SignUp.aspx">
+      <publishTime>01/15/2020 21:39:46</publishTime>
+    </File>
+    <File Include="single-blog.aspx">
+      <publishTime>01/15/2020 21:40:03</publishTime>
+    </File>
+    <File Include="UserPage.aspx">
+      <publishTime>01/15/2020 21:40:28</publishTime>
+    </File>
+    <File Include="userview.aspx">
+      <publishTime>01/15/2020 18:53:24</publishTime>
+    </File>
+    <File Include="vendors/animate-css/animate.css">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="vendors/animate-css/wow.min.js">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.css">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.js">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="vendors/bootstrap-datepicker/bootstrap-select.css">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="vendors/bootstrap-datepicker/bootstrap-select.js">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="vendors/counter-up/jquery.counterup.js">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="vendors/counter-up/jquery.waypoints.min.js">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="vendors/flipclock/timer.js">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="vendors/isotope/imagesloaded.pkgd.min.js">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="vendors/isotope/isotope-min.js">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="vendors/jquery-ui/jquery-ui.css">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="vendors/jquery-ui/jquery-ui.js">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="vendors/lightbox/simpleLightbox.css">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="vendors/lightbox/simpleLightbox.min.js">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="vendors/linericon/fonts/Linearicons-Free.eot">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="vendors/linericon/fonts/Linearicons-Free.svg">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="vendors/linericon/fonts/Linearicons-Free.ttf">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="vendors/linericon/fonts/Linearicons-Free.woff">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="vendors/linericon/fonts/Linearicons-Free.woff2">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="vendors/linericon/style.css">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="vendors/nice-select/css/nice-select.css">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="vendors/nice-select/css/style.css">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="vendors/nice-select/js/jquery.nice-select.js">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="vendors/nice-select/js/jquery.nice-select.min.js">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="vendors/owl-carousel/assets/ajax-loader.gif">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="vendors/owl-carousel/assets/animated.css">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="vendors/owl-carousel/assets/owl.carousel.css">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="vendors/owl-carousel/owl.carousel.min.css">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="vendors/owl-carousel/owl.carousel.min.js">
+      <publishTime>01/11/2020 14:24:32</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>01/15/2020 23:20:56</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

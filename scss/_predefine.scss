@@ -1,0 +1,87 @@
+.section_gap {
+	padding: 130px 0px;
+	@media (max-width: 991px) {
+		padding: 70px 0;
+	}
+}
+.section_gap_top {
+	padding-top: 120px;
+	@media (max-width: 991px) {
+		padding-top: 70px 0;
+	}
+}
+.section_gap_bottom {
+	padding-bottom: 120px;
+	@media (max-width: 991px) {
+		padding-bottom: 70px 0;
+	}
+}
+.white_bg {
+	background: #fff !important;
+}
+
+/* Main Title Area css
+============================================================================================ */
+.main_title {
+	text-align: center;
+	margin-bottom: 80px;
+	@media (max-width: 991px) {
+		margin-bottom: 40px;
+	}
+	h2 {
+		font-size: 36px;
+		margin-bottom: 10px;
+		text-transform: capitalize;
+		@media (max-width: 767px) {
+			font-size: 30px;
+		}
+	}
+	p {
+		margin-bottom: 0px;
+		max-width: 570px;
+		margin: auto;
+	}
+	&.white {
+		h2 {
+			color: #fff;
+		}
+		p {
+			color: #fff;
+			opacity: .6;
+		}
+	}
+}
+
+/* End Main Title Area css
+============================================================================================ */
+
+.primary_btn {
+	display: inline-block;
+	background: $primary-color;
+	padding: 0px 50px;
+	color: #fff;
+	font-family: $text-font;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 48px;
+	border: 1px solid $primary-color;
+	border-radius: 0px;
+	outline: none !important;
+	box-shadow: none !important;
+	text-align: center;
+	text-transform: uppercase;
+	cursor: pointer;
+	@include transition();
+	&:hover {
+		background: transparent;
+		color: $primary-color;
+	}
+	&.yellow_btn {
+		background: $primary-color2 !important;
+		border: 1px solid $primary-color2 !important;
+		color: #000000;
+		&:hover {
+			background: transparent !important;
+		}
+	}
+}

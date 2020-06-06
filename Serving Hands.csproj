@@ -1,0 +1,599 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1BAAA1CF-E2C9-4793-8DCD-459D5006CC8A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Serving_Hands</RootNamespace>
+    <AssemblyName>Serving Hands</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\..\Desktop\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="about-us.aspx" />
+    <Content Include="AdminPage.aspx" />
+    <Content Include="AdminSignUp.aspx" />
+    <Content Include="blog.aspx" />
+    <Content Include="Blood.aspx" />
+    <Content Include="causes.aspx" />
+    <Content Include="comment.aspx" />
+    <Content Include="contact.html" />
+    <Content Include="contact_process.php" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\custom.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\responsive.css" />
+    <Content Include="css\style.css" />
+    <Content Include="DonateBlood.aspx" />
+    <Content Include="DonateClothes.aspx" />
+    <Content Include="DonateDowery.aspx" />
+    <Content Include="DonateMoney.aspx" />
+    <Content Include="Donation.aspx" />
+    <Content Include="Dowry.aspx" />
+    <Content Include="elements.aspx" />
+    <Content Include="event-details.aspx" />
+    <Content Include="events.aspx" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="ForgetPassword.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="clothes.aspx" />
+    <Content Include="img\about-img.jpg" />
+    <Content Include="img\b1.jfif" />
+    <Content Include="img\b2.jfif" />
+    <Content Include="img\banner\banner-2.jpg" />
+    <Content Include="img\banner\banner-map.png" />
+    <Content Include="img\banner\banner.jpg" />
+    <Content Include="img\banner\home-banner.jpg" />
+    <Content Include="img\blog\add.jpg" />
+    <Content Include="img\blog\author.png" />
+    <Content Include="img\blog\c1.jpg" />
+    <Content Include="img\blog\c2.jpg" />
+    <Content Include="img\blog\c3.jpg" />
+    <Content Include="img\blog\c4.jpg" />
+    <Content Include="img\blog\c5.jpg" />
+    <Content Include="img\blog\c6.jpg" />
+    <Content Include="img\blog\cat-post\cat-post-1.jpg" />
+    <Content Include="img\blog\cat-post\cat-post-2.jpg" />
+    <Content Include="img\blog\cat-post\cat-post-3.jpg" />
+    <Content Include="img\blog\causes\causes-1.jpg" />
+    <Content Include="img\blog\causes\causes-2.jpg" />
+    <Content Include="img\blog\causes\causes-3.jpg" />
+    <Content Include="img\blog\feature-img1.jpg" />
+    <Content Include="img\blog\main-blog\m-blog-1.jpg" />
+    <Content Include="img\blog\main-blog\m-blog-2.jpg" />
+    <Content Include="img\blog\main-blog\m-blog-3.jpg" />
+    <Content Include="img\blog\main-blog\m-blog-4.jpg" />
+    <Content Include="img\blog\main-blog\m-blog-5.jpg" />
+    <Content Include="img\blog\next.jpg" />
+    <Content Include="img\blog\popular-post\post1.jpg" />
+    <Content Include="img\blog\popular-post\post2.jpg" />
+    <Content Include="img\blog\popular-post\post3.jpg" />
+    <Content Include="img\blog\popular-post\post4.jpg" />
+    <Content Include="img\blog\post-img1.jpg" />
+    <Content Include="img\blog\post-img2.jpg" />
+    <Content Include="img\blog\prev.jpg" />
+    <Content Include="img\causes\c1.png" />
+    <Content Include="img\causes\c2.png" />
+    <Content Include="img\causes\c3.png" />
+    <Content Include="img\elements\a.jpg" />
+    <Content Include="img\elements\a2.jpg" />
+    <Content Include="img\elements\d.jpg" />
+    <Content Include="img\elements\disabled-check.png" />
+    <Content Include="img\elements\disabled-radio.png" />
+    <Content Include="img\elements\f1.jpg" />
+    <Content Include="img\elements\f2.jpg" />
+    <Content Include="img\elements\f3.jpg" />
+    <Content Include="img\elements\f4.jpg" />
+    <Content Include="img\elements\f5.jpg" />
+    <Content Include="img\elements\f6.jpg" />
+    <Content Include="img\elements\f7.jpg" />
+    <Content Include="img\elements\f8.jpg" />
+    <Content Include="img\elements\g1.jpg" />
+    <Content Include="img\elements\g2.jpg" />
+    <Content Include="img\elements\g3.jpg" />
+    <Content Include="img\elements\g4.jpg" />
+    <Content Include="img\elements\g5.jpg" />
+    <Content Include="img\elements\g6.jpg" />
+    <Content Include="img\elements\g7.jpg" />
+    <Content Include="img\elements\g8.jpg" />
+    <Content Include="img\elements\primary-check.png" />
+    <Content Include="img\elements\primary-radio.png" />
+    <Content Include="img\elements\success-check.png" />
+    <Content Include="img\elements\success-radio.png" />
+    <Content Include="img\elements\user1.png" />
+    <Content Include="img\elements\user2.png" />
+    <Content Include="img\event\e1.jpg" />
+    <Content Include="img\event\e2.jpg" />
+    <Content Include="img\event\e3.jpg" />
+    <Content Include="img\event\e4.jpg" />
+    <Content Include="img\event\event-details.jpg" />
+    <Content Include="img\features\fc1.jpg" />
+    <Content Include="img\features\fc2.jpg" />
+    <Content Include="img\features\fc3.jpg" />
+    <Content Include="img\fevicon.png" />
+    <Content Include="img\gallery\g1.jpg" />
+    <Content Include="img\gallery\g2.jpg" />
+    <Content Include="img\gallery\g3.jpg" />
+    <Content Include="img\gallery\g4.jpg" />
+    <Content Include="img\gallery\g5.jpg" />
+    <Content Include="img\gallery\g6.jpg" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\story\s1.jpg" />
+    <Content Include="img\story\s2.jpg" />
+    <Content Include="img\story\s3.jpg" />
+    <Content Include="img\subscribe-bg.jpg" />
+    <Content Include="img\voluteer\v1.jpg" />
+    <Content Include="img\voluteer\v2.jpg" />
+    <Content Include="img\voluteer\v3.jpg" />
+    <Content Include="img\voluteer\v4.jpg" />
+    <Content Include="index.aspx" />
+    <Content Include="index.html" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\contact.js" />
+    <Content Include="js\countdown.js" />
+    <Content Include="js\custom.js" />
+    <Content Include="js\gmaps.min.js" />
+    <Content Include="js\jquery-3.2.1.min.js" />
+    <Content Include="js\jquery.ajaxchimp.min.js" />
+    <Content Include="js\jquery.form.js" />
+    <Content Include="js\jquery.validate.min.js" />
+    <Content Include="js\mail-script.js" />
+    <Content Include="js\popper.js" />
+    <Content Include="js\stellar.js" />
+    <Content Include="js\theme.js" />
+    <Content Include="money.aspx" />
+    <Content Include="Organization.aspx" />
+    <Content Include="PasswordRecovery.aspx" />
+    <Content Include="Seelife Charity-doc\css\font-awesome.min.css" />
+    <Content Include="Seelife Charity-doc\css\main.css" />
+    <Content Include="Seelife Charity-doc\css\normalize.min.css" />
+    <Content Include="Seelife Charity-doc\fonts\fontawesome-webfont.svg" />
+    <Content Include="Seelife Charity-doc\img\logo.png" />
+    <Content Include="Seelife Charity-doc\index.html" />
+    <Content Include="Seelife Charity-doc\js\custom.js" />
+    <Content Include="Seelife Charity-doc\js\jquery-1.11.0.min.js" />
+    <Content Include="Seelife Charity-doc\js\jquery.nav.js" />
+    <Content Include="Seelife Charity-doc\syntax-highlighter\scripts\shAutoloader.js" />
+    <Content Include="Seelife Charity-doc\syntax-highlighter\scripts\shBrushAppleScript.js" />
+    <Content Include="Seelife Charity-doc\syntax-highlighter\scripts\shBrushAS3.js" />
+    <Content Include="Seelife Charity-doc\syntax-highlighter\scripts\shBrushBash.js" />
+    <Content Include="Seelife Charity-doc\syntax-highlighter\scripts\shBrushColdFusion.js" />
+    <Content Include="Seelife Charity-doc\syntax-highlighter\scripts\shBrushCpp.js" />
+    <Content Include="Seelife Charity-doc\syntax-highlighter\scripts\shBrushCSharp.js" />
+    <Content Include="Seelife Charity-doc\syntax-highlighter\scripts\shBrushCss.js" />
+    <Content Include="Seelife Charity-doc\syntax-highlighter\scripts\shBrushDelphi.js" />
+    <Content Include="Seelife Charity-doc\syntax-highlighter\scripts\shBrushDiff.js" />
+    <Content Include="Seelife Charity-doc\syntax-highlighter\scripts\shBrushErlang.js" />
+    <Content Include="Seelife Charity-doc\syntax-highlighter\scripts\shBrushGroovy.js" />
+    <Content Include="Seelife Charity-doc\syntax-highlighter\scripts\shBrushJava.js" />
+    <Content Include="Seelife Charity-doc\syntax-highlighter\scripts\shBrushJavaFX.js" />
+    <Content Include="Seelife Charity-doc\syntax-highlighter\scripts\shBrushJScript.js" />
+    <Content Include="Seelife Charity-doc\syntax-highlighter\scripts\shBrushPerl.js" />
+    <Content Include="Seelife Charity-doc\syntax-highlighter\scripts\shBrushPhp.js" />
+    <Content Include="Seelife Charity-doc\syntax-highlighter\scripts\shBrushPlain.js" />
+    <Content Include="Seelife Charity-doc\syntax-highlighter\scripts\shBrushPowerShell.js" />
+    <Content Include="Seelife Charity-doc\syntax-highlighter\scripts\shBrushPython.js" />
+    <Content Include="Seelife Charity-doc\syntax-highlighter\scripts\shBrushRuby.js" />
+    <Content Include="Seelife Charity-doc\syntax-highlighter\scripts\shBrushSass.js" />
+    <Content Include="Seelife Charity-doc\syntax-highlighter\scripts\shBrushScala.js" />
+    <Content Include="Seelife Charity-doc\syntax-highlighter\scripts\shBrushSql.js" />
+    <Content Include="Seelife Charity-doc\syntax-highlighter\scripts\shBrushVb.js" />
+    <Content Include="Seelife Charity-doc\syntax-highlighter\scripts\shBrushXml.js" />
+    <Content Include="Seelife Charity-doc\syntax-highlighter\scripts\shCore.js" />
+    <Content Include="Seelife Charity-doc\syntax-highlighter\scripts\shLegacy.js" />
+    <Content Include="Seelife Charity-doc\syntax-highlighter\styles\shCore.css" />
+    <Content Include="Seelife Charity-doc\syntax-highlighter\styles\shCoreDefault.css" />
+    <Content Include="Seelife Charity-doc\syntax-highlighter\styles\shCoreDjango.css" />
+    <Content Include="Seelife Charity-doc\syntax-highlighter\styles\shCoreEclipse.css" />
+    <Content Include="Seelife Charity-doc\syntax-highlighter\styles\shCoreEmacs.css" />
+    <Content Include="Seelife Charity-doc\syntax-highlighter\styles\shCoreFadeToGrey.css" />
+    <Content Include="Seelife Charity-doc\syntax-highlighter\styles\shCoreMDUltra.css" />
+    <Content Include="Seelife Charity-doc\syntax-highlighter\styles\shCoreMidnight.css" />
+    <Content Include="Seelife Charity-doc\syntax-highlighter\styles\shCoreRDark.css" />
+    <Content Include="Seelife Charity-doc\syntax-highlighter\styles\shThemeDefault.css" />
+    <Content Include="Seelife Charity-doc\syntax-highlighter\styles\shThemeDjango.css" />
+    <Content Include="Seelife Charity-doc\syntax-highlighter\styles\shThemeEclipse.css" />
+    <Content Include="Seelife Charity-doc\syntax-highlighter\styles\shThemeEmacs.css" />
+    <Content Include="Seelife Charity-doc\syntax-highlighter\styles\shThemeFadeToGrey.css" />
+    <Content Include="Seelife Charity-doc\syntax-highlighter\styles\shThemeMDUltra.css" />
+    <Content Include="Seelife Charity-doc\syntax-highlighter\styles\shThemeMidnight.css" />
+    <Content Include="Seelife Charity-doc\syntax-highlighter\styles\shThemeRDark.css" />
+    <Content Include="single-blog.aspx" />
+    <Content Include="UserPage.aspx" />
+    <Content Include="userview.aspx" />
+    <Content Include="vendors\animate-css\animate.css" />
+    <Content Include="vendors\animate-css\wow.min.js" />
+    <Content Include="vendors\bootstrap-datepicker\bootstrap-datetimepicker.min.css" />
+    <Content Include="vendors\bootstrap-datepicker\bootstrap-datetimepicker.min.js" />
+    <Content Include="vendors\bootstrap-datepicker\bootstrap-select.css" />
+    <Content Include="vendors\bootstrap-datepicker\bootstrap-select.js" />
+    <Content Include="vendors\counter-up\jquery.counterup.js" />
+    <Content Include="vendors\counter-up\jquery.waypoints.min.js" />
+    <Content Include="vendors\flipclock\timer.js" />
+    <Content Include="vendors\isotope\imagesloaded.pkgd.min.js" />
+    <Content Include="vendors\isotope\isotope-min.js" />
+    <Content Include="vendors\jquery-ui\jquery-ui.css" />
+    <Content Include="vendors\jquery-ui\jquery-ui.js" />
+    <Content Include="vendors\lightbox\simpleLightbox.css" />
+    <Content Include="vendors\lightbox\simpleLightbox.min.js" />
+    <Content Include="vendors\linericon\fonts\Linearicons-Free.svg" />
+    <Content Include="vendors\linericon\style.css" />
+    <Content Include="vendors\nice-select\css\nice-select.css" />
+    <Content Include="vendors\nice-select\css\style.css" />
+    <Content Include="vendors\nice-select\js\jquery.nice-select.js" />
+    <Content Include="vendors\nice-select\js\jquery.nice-select.min.js" />
+    <Content Include="vendors\owl-carousel\assets\ajax-loader.gif" />
+    <Content Include="vendors\owl-carousel\assets\animated.css" />
+    <Content Include="vendors\owl-carousel\assets\owl.carousel.css" />
+    <Content Include="vendors\owl-carousel\owl.carousel.min.css" />
+    <Content Include="vendors\owl-carousel\owl.carousel.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="SignUp.aspx" />
+    <Content Include="Login.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="about-us.aspx.cs">
+      <DependentUpon>about-us.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="about-us.aspx.designer.cs">
+      <DependentUpon>about-us.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPage.aspx.cs">
+      <DependentUpon>AdminPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPage.aspx.designer.cs">
+      <DependentUpon>AdminPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSignUp.aspx.cs">
+      <DependentUpon>AdminSignUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminSignUp.aspx.designer.cs">
+      <DependentUpon>AdminSignUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="blog.aspx.cs">
+      <DependentUpon>blog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="blog.aspx.designer.cs">
+      <DependentUpon>blog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Blood.aspx.cs">
+      <DependentUpon>Blood.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Blood.aspx.designer.cs">
+      <DependentUpon>Blood.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="causes.aspx.cs">
+      <DependentUpon>causes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="causes.aspx.designer.cs">
+      <DependentUpon>causes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="comment.aspx.cs">
+      <DependentUpon>comment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="comment.aspx.designer.cs">
+      <DependentUpon>comment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DonateBlood.aspx.cs">
+      <DependentUpon>DonateBlood.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DonateBlood.aspx.designer.cs">
+      <DependentUpon>DonateBlood.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DonateClothes.aspx.cs">
+      <DependentUpon>DonateClothes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DonateClothes.aspx.designer.cs">
+      <DependentUpon>DonateClothes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DonateDowery.aspx.cs">
+      <DependentUpon>DonateDowery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DonateDowery.aspx.designer.cs">
+      <DependentUpon>DonateDowery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DonateMoney.aspx.cs">
+      <DependentUpon>DonateMoney.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DonateMoney.aspx.designer.cs">
+      <DependentUpon>DonateMoney.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Donation.aspx.cs">
+      <DependentUpon>Donation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Donation.aspx.designer.cs">
+      <DependentUpon>Donation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dowry.aspx.cs">
+      <DependentUpon>Dowry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dowry.aspx.designer.cs">
+      <DependentUpon>Dowry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="elements.aspx.cs">
+      <DependentUpon>elements.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="elements.aspx.designer.cs">
+      <DependentUpon>elements.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="event-details.aspx.cs">
+      <DependentUpon>event-details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="event-details.aspx.designer.cs">
+      <DependentUpon>event-details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="events.aspx.cs">
+      <DependentUpon>events.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="events.aspx.designer.cs">
+      <DependentUpon>events.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ForgetPassword.aspx.cs">
+      <DependentUpon>ForgetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForgetPassword.aspx.designer.cs">
+      <DependentUpon>ForgetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Admin.cs" />
+    <Compile Include="Models\Blood.cs" />
+    <Compile Include="Models\BloodSlip.cs" />
+    <Compile Include="Models\ClearTextBox.cs" />
+    <Compile Include="clothes.aspx.cs">
+      <DependentUpon>clothes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="clothes.aspx.designer.cs">
+      <DependentUpon>clothes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Clothes.cs" />
+    <Compile Include="Models\ClothesSlip.cs" />
+    <Compile Include="Models\Connection.cs" />
+    <Compile Include="Models\Dowery.cs" />
+    <Compile Include="Models\DowerySlip.cs" />
+    <Compile Include="Models\Email.cs" />
+    <Compile Include="Models\ForgetPassword.cs" />
+    <Compile Include="Models\ICrud.cs" />
+    <Compile Include="Models\Login.cs" />
+    <Compile Include="Models\Money.cs" />
+    <Compile Include="Models\MoneySlip.cs" />
+    <Compile Include="Models\Register.cs" />
+    <Compile Include="Models\Users.cs" />
+    <Compile Include="money.aspx.cs">
+      <DependentUpon>money.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="money.aspx.designer.cs">
+      <DependentUpon>money.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Organization.aspx.cs">
+      <DependentUpon>Organization.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Organization.aspx.designer.cs">
+      <DependentUpon>Organization.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Organization.cs" />
+    <Compile Include="PasswordRecovery.aspx.cs">
+      <DependentUpon>PasswordRecovery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PasswordRecovery.aspx.designer.cs">
+      <DependentUpon>PasswordRecovery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignUp.aspx.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignUp.aspx.designer.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="single-blog.aspx.cs">
+      <DependentUpon>single-blog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="single-blog.aspx.designer.cs">
+      <DependentUpon>single-blog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPage.aspx.cs">
+      <DependentUpon>UserPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPage.aspx.designer.cs">
+      <DependentUpon>UserPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userview.aspx.cs">
+      <DependentUpon>userview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userview.aspx.designer.cs">
+      <DependentUpon>userview.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".DS_Store" />
+    <Content Include="css\.DS_Store" />
+    <Content Include="css\style.css.map" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="img\.DS_Store" />
+    <Content Include="img\causes\.DS_Store" />
+    <Content Include="img\elements\_DS_Store" />
+    <Content Include="img\event\.DS_Store" />
+    <Content Include="img\features\.DS_Store" />
+    <Content Include="img\gallery\.DS_Store" />
+    <Content Include="img\story\.DS_Store" />
+    <Content Include="img\voluteer\.DS_Store" />
+    <None Include="packages.config" />
+    <Content Include="scss\style.scss" />
+    <Content Include="scss\_blog.scss" />
+    <Content Include="scss\_breadcrumb.scss" />
+    <Content Include="scss\_contact.scss" />
+    <Content Include="scss\_elements.scss" />
+    <Content Include="scss\_footer.scss" />
+    <Content Include="scss\_header.scss" />
+    <Content Include="scss\_home.scss" />
+    <Content Include="scss\_predefine.scss" />
+    <Content Include="scss\_reset.scss" />
+    <Content Include="scss\_variables.scss" />
+    <Content Include="Seelife Charity-doc\.DS_Store" />
+    <Content Include="Seelife Charity-doc\css\_DS_Store" />
+    <Content Include="Seelife Charity-doc\fonts\fontawesome-webfont.eot" />
+    <Content Include="Seelife Charity-doc\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Seelife Charity-doc\fonts\fontawesome-webfont.woff" />
+    <Content Include="Seelife Charity-doc\fonts\FontAwesome.otf" />
+    <Content Include="Seelife Charity-doc\fonts\_DS_Store" />
+    <Content Include="Seelife Charity-doc\js\_DS_Store" />
+    <Content Include="Seelife Charity-doc\syntax-highlighter\_DS_Store" />
+    <Content Include="Seelife Charity-doc\_DS_Store" />
+    <Content Include="vendors\linericon\fonts\Linearicons-Free.eot" />
+    <Content Include="vendors\linericon\fonts\Linearicons-Free.ttf" />
+    <Content Include="vendors\linericon\fonts\Linearicons-Free.woff" />
+    <Content Include="vendors\linericon\fonts\Linearicons-Free.woff2" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>6416</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:6416/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

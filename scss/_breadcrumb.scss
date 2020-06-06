@@ -1,0 +1,96 @@
+/* Home Banner Area css
+============================================================================================ */
+.home_banner_area {
+	z-index: 1;
+	min-height: 900px;
+	display: flex;
+	background: linear-gradient(rgba(3, 1, 10, 0.5), rgba(3, 1, 10, 0.5)),
+		url(../img/banner/home-banner.jpg) no-repeat scroll center center;
+	background-size: cover;
+	.banner_inner {
+		width: 100%;
+		display: flex;
+		.container {
+			vertical-align: middle;
+			align-self: center;
+		}
+		.banner_content {
+			color: #fff;
+			vertical-align: middle;
+			align-self: center;
+			text-align: center;
+			.upper_text {
+				font-size: 50px;
+				text-transform: uppercase;
+				color: $primary-color2;
+				@media (max-width: 767px) {
+					font-size: 35px;
+				}
+			}
+			h2 {
+				color: #ffffff;
+				margin-top: 0px;
+				font-size: 50px;
+				font-weight: bold;
+				font-family: $title-font;
+				line-height: 70px;
+				text-transform: uppercase;
+				margin-bottom: 20px;
+			}
+			p {
+				color: #f9f9ff;
+				max-width: 680px;
+				margin: 0px auto 45px;
+			}
+			.mr-20 {
+				@media (max-width: 767px) {
+					margin-right: 0;
+					margin-bottom: 15px;
+				}
+			}
+		}
+	}
+}
+
+.banner_area {
+	position: relative;
+	z-index: 1;
+	min-height: 500px;
+	.banner_inner {
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		min-height: 500px;
+		background: transparent;
+		z-index: 1;
+		.overlay {
+			background: linear-gradient(0deg, rgba(6, 13, 1, .6), rgba(6, 13, 1, .6)),
+				url(../img/banner/banner.jpg) no-repeat scroll center center;
+			background-size: cover;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			height: 100%;
+			bottom: 0;
+			z-index: -1;
+			opacity: 1;
+		}
+		.banner_content {
+			h2 {
+				color: #fff;
+				font-size: 48px;
+				font-family: $text-font;
+				margin-bottom: 10px;
+				font-weight: 500;
+			}
+			p {
+				color: #ffffff;
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+/* End Home Banner Area css
+============================================================================================ */
